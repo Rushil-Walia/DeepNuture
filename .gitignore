@@ -1,0 +1,15 @@
+# Compiled class files
+*.class
+
+# Package files
+*.jar
+*.war
+
+# Build directories (Maven/Eclipse)
+target/
+bin/
+
+# IDE specific files
+.classpath
+.project
+.settings/
