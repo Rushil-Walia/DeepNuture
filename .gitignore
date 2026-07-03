@@ -13,4 +13,47 @@ bin/
 .classpath
 .project
 .settings/
+.idea/
+*.iml
+*.iws
+bin/
 .vscode/
+
+# =========================
+# Maven build output
+# =========================
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# =========================
+# Operating System Files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Log Files
+# =========================
+*.log
+logs/
+
+# =========================
+# Spring Boot & Environment
+# =========================
+.env
+.env.*
+application-secret.properties
+application-secret.yml
+
+# =========================
+# Java Crash Reports
+# =========================
+hs_err_pid*
