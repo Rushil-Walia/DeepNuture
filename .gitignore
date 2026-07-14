@@ -1,28 +1,24 @@
-# Compiled class files
+# =========================
+# Java & Compiled Files
+# =========================
 *.class
-
-# Package files
 *.jar
 *.war
 
-# Build directories (Maven/Eclipse)
+# =========================
+# Build Directories (Maven/General)
+# =========================
+bin/
 target/
-bin/
-
-# IDE specific files
-.classpath
-.project
-.settings/
-.idea/
-*.iml
-*.iws
-bin/
-.vscode/
+!**/src/main/**/target/
+!**/src/test/**/target/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
 
 # =========================
-# Maven build output
+# Maven Specific Files
 # =========================
-target/
 pom.xml.tag
 pom.xml.releaseBackup
 pom.xml.versionsBackup
@@ -34,18 +30,6 @@ buildNumber.properties
 .mvn/wrapper/maven-wrapper.jar
 
 # =========================
-# Operating System Files
-# =========================
-.DS_Store
-Thumbs.db
-
-# =========================
-# Log Files
-# =========================
-*.log
-logs/
-
-# =========================
 # Spring Boot & Environment
 # =========================
 .env
@@ -54,6 +38,51 @@ application-secret.properties
 application-secret.yml
 
 # =========================
-# Java Crash Reports
+# Log Files
 # =========================
+*.log
+logs/
+
+# =========================
+# IDE Specific Files
+# =========================
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Eclipse / STS (Spring Tool Suite)
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache
+
+# VS Code
+.vscode/
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# =========================
+# Operating System Files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Miscellaneous
+# =========================
+# Java Crash Reports
 hs_err_pid*
+
+# Spring Boot default help file
+HELP.md
