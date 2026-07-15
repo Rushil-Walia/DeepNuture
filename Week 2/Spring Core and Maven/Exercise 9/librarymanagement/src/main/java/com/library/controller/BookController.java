@@ -2,7 +2,6 @@ package com.library.controller;
 
 import com.library.entity.Book;
 import com.library.repository.BookRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
@@ -10,8 +9,11 @@ import java.util.List;
 @RequestMapping("/api/books")
 public class BookController {
 
-    @Autowired
-    private BookRepository bookRepository;
+    private final BookRepository bookRepository;
+
+    BookController(BookRepository bookRepository) {
+        this.bookRepository = bookRepository;
+    }
 
     @GetMapping
     public List<Book> getAllBooks() {

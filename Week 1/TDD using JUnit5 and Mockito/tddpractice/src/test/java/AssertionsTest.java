@@ -24,6 +24,7 @@ public class AssertionsTest {
 
         // 6. Assert Throws (JUnit 5 Specific): Verifies that a specific exception is thrown
         assertThrows(ArithmeticException.class, () -> {
+            @SuppressWarnings("unused")
             int dummy  = 10 / 0;
         }, "Dividing by zero must throw an ArithmeticException");
     }
