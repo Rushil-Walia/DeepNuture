@@ -1,3 +1,4 @@
+package com.example;
 public class MyService {
     
     private final ExternalApi externalApi;
@@ -10,5 +11,9 @@ public class MyService {
     public String fetchData() {
         // The service relies on the external API to get its data
         return externalApi.getData();
+    }
+    // ADDED: New method to satisfy the test and call the API
+    public String fetchDataById(int id) {
+        return externalApi.getDataById(id);
     }
 }
