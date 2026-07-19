@@ -42,6 +42,11 @@ application-secret.yml
 # =========================
 *.log
 logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
 # =========================
 # IDE Specific Files
@@ -86,3 +91,9 @@ hs_err_pid*
 
 # Spring Boot default help file
 HELP.md
+
+#node
+node_modules
+dist
+dist-ssr
+*.local
