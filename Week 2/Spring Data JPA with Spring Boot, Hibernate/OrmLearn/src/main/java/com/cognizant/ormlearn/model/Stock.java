@@ -1,6 +1,6 @@
 package com.cognizant.ormlearn.model;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.math.BigDecimal;
 import java.util.Date;
 
@@ -16,6 +16,7 @@ public class Stock {
     @Column(name = "st_code")
     private String code;
 
+    @SuppressWarnings("deprecation")
     @Column(name = "st_date")
     @Temporal(TemporalType.DATE)
     private Date date;

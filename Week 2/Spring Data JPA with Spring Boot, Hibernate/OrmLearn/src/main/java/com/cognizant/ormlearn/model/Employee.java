@@ -1,6 +1,6 @@
 package com.cognizant.ormlearn.model;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.util.Date;
 import java.util.Set;
 

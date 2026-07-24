@@ -1,6 +1,6 @@
 package com.cognizant.ormlearn.model;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name="options")

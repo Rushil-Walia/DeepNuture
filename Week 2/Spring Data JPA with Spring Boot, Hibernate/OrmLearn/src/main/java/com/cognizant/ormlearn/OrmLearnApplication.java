@@ -19,8 +19,11 @@ public class OrmLearnApplication {
     private static final Logger LOGGER = LoggerFactory.getLogger(OrmLearnApplication.class);
     private static CountryService countryService;
     private static EmployeeService employeeService;
+    @SuppressWarnings("unused")
     private static DepartmentService departmentService;
+    @SuppressWarnings("unused")
     private static SkillService skillService;
+    @SuppressWarnings("unused")
     private static AttemptService attemptService;
 
     public static void main(String[] args) {
@@ -41,6 +44,7 @@ public class OrmLearnApplication {
         // testGetAllPermanentEmployees();
     }
 
+    @SuppressWarnings("unused")
     private static void testGetAllCountries() {
         LOGGER.info("Start testGetAllCountries");
         List<Country> countries = countryService.getAllCountries();
@@ -48,6 +52,7 @@ public class OrmLearnApplication {
         LOGGER.info("End testGetAllCountries");
     }
 
+    @SuppressWarnings("unused")
     private static void testAddCountry() {
         LOGGER.info("Start testAddCountry");
         Country c = new Country("ZZ", "Test Country");
@@ -61,6 +66,7 @@ public class OrmLearnApplication {
         LOGGER.info("End testAddCountry");
     }
 
+    @SuppressWarnings("unused")
     private static void testUpdateCountry() {
         LOGGER.info("Start testUpdateCountry");
         try {
@@ -73,6 +79,7 @@ public class OrmLearnApplication {
         LOGGER.info("End testUpdateCountry");
     }
 
+    @SuppressWarnings("unused")
     private static void testDeleteCountry() {
         LOGGER.info("Start testDeleteCountry");
         countryService.deleteCountry("ZZ");
@@ -84,6 +91,7 @@ public class OrmLearnApplication {
         LOGGER.info("End testDeleteCountry");
     }
 
+    @SuppressWarnings("unused")
     private static void testGetAllPermanentEmployees() {
         LOGGER.info("Start testGetAllPermanentEmployees");
         List<Employee> employees = employeeService.getAllPermanentEmployees();

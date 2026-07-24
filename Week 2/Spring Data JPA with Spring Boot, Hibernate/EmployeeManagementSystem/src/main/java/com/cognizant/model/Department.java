@@ -7,7 +7,7 @@ import org.springframework.data.annotation.LastModifiedBy;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.util.Date;
 import java.util.Set;
 
@@ -29,6 +29,7 @@ public class Department {
     @CreatedBy
     private String createdBy;
 
+    @SuppressWarnings("deprecation")
     @CreatedDate
     @Temporal(TemporalType.TIMESTAMP)
     private Date createdDate;
@@ -36,6 +37,7 @@ public class Department {
     @LastModifiedBy
     private String lastModifiedBy;
 
+    @SuppressWarnings("deprecation")
     @LastModifiedDate
     @Temporal(TemporalType.TIMESTAMP)
     private Date lastModifiedDate;
